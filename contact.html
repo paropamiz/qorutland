@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Code The Web: Final Project</title>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	 crossorigin="anonymous">
+</head>
+
+<body>
+	<!-- ⬇️ Put your code below this line ️️⬇️ -->
+
+	<div class="wrap">
+		<div class="navbar">
+			<div class="logo"><span>Qorut</span>Land<span>.</span></div>
+			<nav class="nav">
+				<label for="pure">&#9776</label>
+				<input type="checkbox" id="pure" />
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="history.html">HISTORY</a></li>
+						<li><a class="active" href="contact.html">CONTACT</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<header>
+			<div class="heading">
+				<h1 class="head-text">The<span class="azra">Hazras</span></h1>
+				<h1 class="head-text">in the world</h1>
+			</div>
+		</header>
+		<main>
+			<div class="contact">
+				<div class="contact__header">
+					<img src="https://res.cloudinary.com/paropamiz/image/upload/v1559165840/logo_q1_kbbige.png">
+					<h1 class="contact__title">CONTACT US.</h1>
+				</div>
+
+				<form>
+					<fieldset>
+						<div id="part-1">
+							<label for="full-name">Full Name</label>
+							<input type="text" name="full-name" id="full-name" required>
+							<br />
+							<label for="birthdate">Birth Date</label>
+							<input type="date" name="birthdate" min="1917-01-01" id="birthdate" required>
+							<br />
+
+							<label for="country">Select your country</label>
+							<br />
+							<select name="country" id="country" required>
+
+								<option label="Select a country" selected="selected">Select a country … </option>
+								<option>Afghanistan</option>
+								<option>Argentina</option>
+								<option>Aruba</option>
+								<option>Australia</option>
+								<option>Austria</option>
+								<option>Azerbaijan</option>
+								<option>Bahrain</option>
+								<option>Belgium</option>
+								<option>Brazil</option>
+								<option>Cambodia</option>
+								<option>Cameroon</option>
+								<option>Canada</option>
+								<option>Chile</option>
+								<option>China</option>
+								<option>Colombia</option>
+								<option>Comoros</option>
+								<option>Costa Rica</option>
+								<option>Croatia</option>
+								<option>Denmark</option>
+								<option>Dominica</option>
+								<option>Ecuador</option>
+								<option>Egypt</option>
+								<option>Finland</option>
+								<option>France</option>
+								<option>Gambia</option>
+								<option>Georgia</option>
+								<option>Germany</option>
+								<option>Ghana</option>
+								<option>Greece</option>
+								<option>Hong Kong</option>
+								<option>Hungary</option>
+								<option>Iceland</option>
+								<option>India</option>
+								<option>Indonesia</option>
+								<option>Iran</option>
+								<option>Iraq</option>
+								<option>Ireland</option>
+								<option>Israel</option>
+								<option>Italy</option>
+								<option>Jamaica</option>
+								<option>Japan</option>
+								<option>Jordan</option>
+								<option>Kazakhstan</option>
+								<option>south Korea</option>
+								<option>Kuwait</option>
+								<option>Lebanon</option>
+								<option>Luxembourg</option>
+								<option>Macao</option>
+								<option>Maldives</option>
+								<option>Mexico</option>
+								<option>Netherlands</option>
+								<option>New Zealand</option>
+								<option>Nigeria</option>
+								<option>Norway</option>
+								<option>Peru</option>
+								<option>Philippines</option>
+								<option>Poland</option>
+								<option>Portugal</option>
+								<option>Puerto Rico</option>
+								<option>Qatar</option>
+								<option>Russian Federation</option>
+								<option>Saudi Arabia</option>
+								<option>Singapore</option>
+								<option>Somalia</option>
+								<option>South Africa</option>
+								<option>Spain</option>
+								<option>Sri Lanka</option>
+								<option>Sudan</option>
+								<option>Swaziland</option>
+								<option>Sweden</option>
+								<option>Syrian Arab Republic</option>
+								<option>Tajikistan</option>
+								<option>Thailand</option>
+								<option>Turkey</option>
+								<option>Turkmenistan</option>
+								<option>United Arab Emirates</option>
+								<option>United Kingdom</option>
+								<option>United States</option>
+								<option>Viet Nam</option>
+							</select>
+						</div>
+						<br />
+						<div id="part-2">
+							<label for="email">Your e-mail</label>
+							<input type="email" name="email" placeholder="account@email.com" id="email" required>
+						</div>
+
+						<div id="part-3">
+							<h2>Other Information (optional)</h2>
+							<label for="rating">How satisfied are you with our website?</label>
+							<br />
+							<input type="radio" name="rating" id="rating" value="Very satisfied" tabindex="-1">Very satisfied
+							<br />
+							<input type="radio" name="rating" value="Satisfied" tabindex="-1">Satisfied
+							<br />
+							<input type="radio" name="rating" value="Dissatisfied" tabindex="-1">Dissatisfied
+							<br /><br />
+							<label for="message">We'd love to hear from you.</label>
+							<br />
+							<textarea rows="5" cols="50" id="message" tabindex="-1"></textarea>
+						</div>
+
+						<br /><br />
+						<input type="submit" id="submitButton" name="submitButton" value="Send-message">
+					</fieldset>
+				</form>
+			</div>
+		</main>
+		<footer>
+			<div class="social-icon">
+				<ul>
+					<li><a href="#" target="blank">
+							<i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" target="blank">
+							<i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" target="blank">
+							<i class="fa fa-instagram"></i></a></li>
+					<li><a href="#" target="blank">
+							<i class="fa fa-whatsapp"></i></a></li>
+				</ul>
+			</div>
+			<div class="menu-one">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="history.html">HISTORY</a></li>
+					<li><a class="active" href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p>Design by: <a href="#">Qorutland group</a></p>
+			</div>
+		</footer>
+		<!-- ⬆️ Put your code above this line ⬆️ -->
+		<script src="ignore/index.js">
+		</script>
+</body>
+
+</html>

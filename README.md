@@ -1,2 +1,0 @@
-# qorutland
-Created with CodeSandbox

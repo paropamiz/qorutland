@@ -1,0 +1,99 @@
+.chart {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  // background-color: gray;
+  .row {
+      display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+      grid-column-gap: 10px;
+      width: 100%;
+  }
+  .card {
+      display: grid;
+      background-color: red;
+      position: relative;
+      margin: 0 0 2rem;
+      background-color: #fff;
+      border-radius: 2px;
+      font-size: 1rem;
+      font-weight: 400;
+      color: rgba(0,0,0,.87);
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,.21);
+      overflow: hidden;
+      z-index: 1;
+      
+      &.headline-card {
+          margin: 0 0 30px;
+          padding: 1rem;
+          text-align: center;
+          
+          h1 {
+              margin: 0 0 5px;
+          }
+          
+          p {
+              margin: 0;
+              font-size: .875rem;
+              color: rgba(0,0,0,.75);
+          }
+      }
+  
+      .card-img-cover {
+          position: relative;
+          color: #fff;
+      
+          .card-img {
+              position: relative;
+              overflow: hidden;
+              width: 100%;
+              background-size: cover;
+              background-position: top center;
+              &:hover {
+                  transform: scale(1.05);
+              }
+              &:before {
+                  width: 100%;
+                  padding-top: 100%;
+                  display: block;
+                  content: '';
+              }
+          }
+      }
+  
+      .card-content {
+          background-color: rgba(0,0,0,.7);
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 2;
+          border-bottom-left-radius: 2px;
+          border-bottom-right-radius: 2px;
+
+          .card-header {
+              padding: 1rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              color: #fff;
+
+              .card-title {
+                  margin: 0;
+                  font-size: 1.5rem;
+                  font-weight: 400;
+                  letter-spacing: 0;
+                  line-height: 32px;
+              }
+
+              .card-subtitle {
+                  margin: 0;
+                  font-size: .875rem;
+                  font-weight: 400;
+                  letter-spacing: .01em;
+                  line-height: 20px;
+              }
+          }
+      }
+  }
+}

@@ -1,0 +1,151 @@
+.contact {
+  background: #fff;
+  width: 60%;
+  margin: 50px auto;
+  border: 1px solid;
+  border-radius: 0.5%;
+  &__title {
+  padding-bottom: 20px;
+  }
+  &__header {
+    background: #026796;
+    text-align: center;
+    padding: 0;
+    color: #ffb400;
+    height: auto;
+    img{
+      padding: audio auto 0;
+      width: 60%;
+      height: 30%;
+    }
+  }
+  form {
+    margin: 5%;
+    width: 70%;
+  }
+  
+  fieldset {
+    border: 0px;
+  }
+  
+  input {
+    &[type="text"], &[type="date"], &[type="number"] {
+      border: 1px solid #026796;
+      display: block;
+      margin: 10px auto;
+      padding: 2%;
+      width: 100%;
+    }
+  }
+  
+  #country, input[type="email"], textarea {
+    border: 1px solid #026796;
+    display: block;
+    margin: 10px auto;
+    padding: 2%;
+    width: 100%;
+  }
+  
+  input[type="radio"] {
+    margin-top: 1.5%;
+  }
+  
+  #submitButton {
+    background: #ffb400;
+  
+    padding: 20px 50px;
+    float: left;
+    cursor: pointer;
+    margin-right: 15px;
+    &:hover {
+      filter: brightness(115%);
+      
+    }
+  }
+  
+  
+  #part-1 label:after, #part-2 label:after {
+    content: " *";
+    color: red;
+  }
+  
+  textarea {
+    resize: none;
+  }
+}
+
+
+
+@media all and (min-width: 0px) and (max-width: 320px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #container {
+    width: 90%;
+    margin-top: 20%;
+  }
+
+  #resetButton {
+    float: left;
+  }
+}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #container {
+    width: 90%;
+    margin-top: 13%;
+  }
+  #tema {
+    width: 100%;
+    left: 0.5px;
+    top: 0;
+  }
+  #resetButton {
+    float: center;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 568px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #container {
+    width: 90%;
+    margin-top: 10%;
+  }
+  #tema {
+    width: 100%;
+    left: 0.5px;
+    top: 0;
+  }
+}
+
+@media all and (min-width: 569px) and (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #container {
+    width: 90%;
+    margin-top: 7%;
+  }
+  #tema {
+    width: 100%;
+    left: 0.5px;
+    top: 0;
+  }
+}

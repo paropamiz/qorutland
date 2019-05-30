@@ -1,0 +1,231 @@
+.container{
+  width:100%;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  h1{
+    font-size:40px
+  }
+  &__item{
+    // background-color: red;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    img {
+      width:80%;
+      height: auto;
+      margin: 0 10%;
+    }
+    h1, p {
+      padding: 10px 10% 0 10%;
+
+    } 
+  }
+}
+.team {
+  padding: 10rem 0;
+  // background-color: red;
+  width:90%;
+  margin: 0 auto;
+  @media screen and (max-width: 500px){
+    width: 50%;
+    margin: 0 auto;
+
+  }
+  &__container{
+    &__heading {
+      text-transform: uppercase;
+      font-size: 3rem;
+      letter-spacing: 10px;
+      margin-right: -3px;
+      margin-top: 0;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    
+    .card-warpper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      grid-column-gap: 10px;
+      align-items: center;
+      align-content: center;
+      width: 95%;
+      /* background-color: red; */
+      margin: 0px auto;
+    }
+    
+    .card {
+      // outline: 2px blue solid;
+      width: 380px;
+      background-color: #ebeef8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+      box-shadow: 0.5rem 0.5rem 0.3rem rgba(0, 0, 0, 0.2);
+    }
+    
+    .card .card-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      clip-path: polygon(0 0, 100% 0, 100% 97%, 0 63%);
+    }
+    
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: -110px;
+      z-index: 999;
+      border: 0.5rem solid #ebeef8;
+    }
+    
+    .card h1 {
+      font-size: 25px;
+      color: #333;
+      margin: 10px;
+    }
+    
+    .job-title {
+      color: #777;
+      font-size: 20px;
+      font-weight: 300;
+      // margin: 5px;
+    }
+    
+    .about {
+      font-size: 16px;
+      margin: 30px 10px;
+      font-style: italic;
+      text-align: center;
+      color: #333;
+    }
+    
+    .card .btn {
+      padding: 10px 20px;
+      background-color: #445ae3;
+      border-radius: 2rem;
+      margin: 1rem 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #eee;
+      font-size: 14px;
+      transition: all 0.5s;
+    }
+    
+    .card .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+    }
+    
+    .card .btn:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+    
+    .social-media {
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 10px 0;
+      margin-top: 5px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .social-media i {
+      font-size: 26px;
+    }
+    .fa-facebook-square {
+      color: #3b5999;
+    }
+    .fa-twitter-square {
+      color: #55acee;
+    }
+    .fa-instagram {
+      color: #e6683c;
+    }
+    
+    .fa-facebook-square:hover,
+    .fa-twitter-square:hover,
+    .fa-instagram:hover {
+      color: #45e19f;
+    }
+    .card {
+      margin: 20px;
+    }
+    
+    .card:hover {
+      transform: scale(1.015);
+    }
+  }
+}
+
+
+
+
+// .about{
+//   padding:5% 5%;
+//   width:100%;
+//   height:auto;
+//   background-color:#fff;
+
+// .left{
+//   padding:10px 3rem;
+//   width:50%;
+//   display:inline-block;
+//   h1{
+//    text-align:center;
+//    color:#ffb400;
+//    margin:0 0 10px 0;
+//      p{
+//        font-size:16px;
+//        margin:40px auto;
+//        width:50%;
+//     }
+//   }
+// }
+// }
+// .right{
+//   padding: 0 2rem;
+//   width:50%;
+//   display:inline-block;
+// img{
+//   width:100%
+//  }
+// }
+
+// .mission{
+//   padding:5% 5%;
+//   width:100%;
+//   height:auto;
+//   background-color:#fff;
+// .right{
+//   padding:10px 4rem;
+//   width:50%;
+//   display:inline-block;
+//   h1{
+//      text-align:center;
+//      color:#ffb400;
+//      margin:0 0 20px 0;
+//         p{
+//            font-size:16px;
+//            margin:40px auto;
+//            width:50%
+//         }
+//      }
+//   }
+// }
+// .left{
+//   float:left;
+//   width:50%;
+//   display:inline-block;
+//   img{
+//      width:100%;
+//   }
+// }
